@@ -1,13 +1,13 @@
 services:
   frontend:
-    image: vsd2107/arcis_frontend_r-d:latest
+    image: username/arcis_frontend_r-d:latest
     ports:
       - "80:80"
     depends_on:
       - backend
 
   backend:
-    image: vsd2107/arcis_backend_r-d:latest
+    image: username/arcis_backend_r-d:latest
     env_file:
       - ./backend/.config.env
     ports:
