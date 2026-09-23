@@ -1,4 +1,4 @@
-<img width="1920" height="1011" alt="Screenshot from 2026-09-23 14-38-24" src="https://github.com/user-attachments/assets/cee93add-a698-4dd7-9b62-b8dda96f582d" /># Dockerized CI/CD Deployment Pipeline for a VMS Web Portal
+# Dockerized CI/CD Deployment Pipeline for a VMS Web Portal
 
 A self-initiated DevOps project exploring **Docker-based deployment** for a Video Management System (VMS) web portal, as an alternative to a direct VM deployment workflow. The project automates the entire path from a `git push` to a live, running application using **GitHub Actions**, **Docker**, and **Docker Compose**.
 
