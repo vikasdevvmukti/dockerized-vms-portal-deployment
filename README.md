@@ -63,32 +63,35 @@ Multi-stage build for the frontend (React build → Nginx serve) and a lean prod
 
 <img width="1617" height="483" alt="Screenshot from 2026-09-23 14-36-51" src="https://github.com/user-attachments/assets/50f909e5-7598-496b-9f90-7e9a6ec5fe41" />
 
-
 ### 2. GitHub Actions Workflow (`deploy.yml`)
 Defines the two jobs — `build_and_push` and `deploy` — and how they chain together.
 
 <img width="1632" height="927" alt="Screenshot from 2026-09-23 14-37-25" src="https://github.com/user-attachments/assets/2abbdf91-2faa-419a-8b0d-4bfc2d4ce232" />
-
 
 ### 3. Docker Compose Configuration
 Orchestrates the frontend and backend containers together on the VM.
 
 <img width="1632" height="927" alt="Screenshot from 2026-09-23 14-37-34" src="https://github.com/user-attachments/assets/d0e7a5db-c3ec-4182-99fb-5ac05c105ff0" />
 
+### 4. Docker Hub Repositories (Images Pushed)
+Both the frontend and backend images successfully built and pushed to the Docker Hub registry via GitHub Actions.
 
-### 4. Successful Pipeline Run — Deploy Step Expanded
+<img width="1907" height="967" alt="Screenshot from 2026-09-23 16-45-18" src="https://github.com/user-attachments/assets/6459d421-1f8b-414b-ba27-64e409269817" />
+
+
+### 5. Successful Pipeline Run — Deploy Step Expanded
 The `deploy` job's log, showing the pipeline pulling both images and running `docker compose up -d` on the VM automatically.
 
 <img width="1919" height="967" alt="Screenshot from 2026-09-23 14-39-54" src="https://github.com/user-attachments/assets/61de8cc9-d401-468e-a535-06301ba6589a" />
 
 
-### 5. Containers Running on the VM
+### 6. Containers Running on the VM
 `docker ps` output confirming both containers are up and healthy after deployment.
 
 <img width="1920" height="1030" alt="Screenshot from 2026-09-23 14-37-45" src="https://github.com/user-attachments/assets/f74a2bfe-c5cf-44bb-9052-6eef04aa7a46" />
 
 
-### 6. Live Portal
+### 7. Live Portal
 The deployed VMS portal, live and accessible in the browser.
 
 <img width="1920" height="1011" alt="Screenshot from 2026-09-23 14-38-24" src="https://github.com/user-attachments/assets/8bd46d82-a44a-4f3e-9c5c-5975ebd7f495" />
