@@ -61,7 +61,8 @@ GitHub Actions triggered
 ### 1. Dockerfiles — Frontend & Backend
 Multi-stage build for the frontend (React build → Nginx serve) and a lean production build for the backend.
 
-<img width="1617" height="483" alt="Screenshot from 2026-09-23 14-36-51" src="https://github.com/user-attachments/assets/e49aa870-ba49-4be4-9242-9007f3f341aa" />
+<img width="1617" height="483" alt="Screenshot from 2026-09-23 14-36-51" src="https://github.com/user-attachments/assets/50f909e5-7598-496b-9f90-7e9a6ec5fe41" />
+
 
 
 
