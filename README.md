@@ -1,4 +1,4 @@
-# Dockerized CI/CD Deployment Pipeline for a VMS Web Portal
+<img width="1920" height="1011" alt="Screenshot from 2026-09-23 14-38-24" src="https://github.com/user-attachments/assets/cee93add-a698-4dd7-9b62-b8dda96f582d" /># Dockerized CI/CD Deployment Pipeline for a VMS Web Portal
 
 A self-initiated DevOps project exploring **Docker-based deployment** for a Video Management System (VMS) web portal, as an alternative to a direct VM deployment workflow. The project automates the entire path from a `git push` to a live, running application using **GitHub Actions**, **Docker**, and **Docker Compose**.
 
@@ -64,36 +64,34 @@ Multi-stage build for the frontend (React build → Nginx serve) and a lean prod
 <img width="1617" height="483" alt="Screenshot from 2026-09-23 14-36-51" src="https://github.com/user-attachments/assets/50f909e5-7598-496b-9f90-7e9a6ec5fe41" />
 
 
-
-
 ### 2. GitHub Actions Workflow (`deploy.yml`)
 Defines the two jobs — `build_and_push` and `deploy` — and how they chain together.
 
-
+<img width="1632" height="927" alt="Screenshot from 2026-09-23 14-37-25" src="https://github.com/user-attachments/assets/2abbdf91-2faa-419a-8b0d-4bfc2d4ce232" />
 
 
 ### 3. Docker Compose Configuration
 Orchestrates the frontend and backend containers together on the VM.
 
-
+<img width="1632" height="927" alt="Screenshot from 2026-09-23 14-37-34" src="https://github.com/user-attachments/assets/d0e7a5db-c3ec-4182-99fb-5ac05c105ff0" />
 
 
 ### 4. Successful Pipeline Run — Deploy Step Expanded
 The `deploy` job's log, showing the pipeline pulling both images and running `docker compose up -d` on the VM automatically.
 
-
+<img width="1919" height="967" alt="Screenshot from 2026-09-23 14-39-54" src="https://github.com/user-attachments/assets/61de8cc9-d401-468e-a535-06301ba6589a" />
 
 
 ### 5. Containers Running on the VM
 `docker ps` output confirming both containers are up and healthy after deployment.
 
-
+<img width="1920" height="1030" alt="Screenshot from 2026-09-23 14-37-45" src="https://github.com/user-attachments/assets/f74a2bfe-c5cf-44bb-9052-6eef04aa7a46" />
 
 
 ### 6. Live Portal
 The deployed VMS portal, live and accessible in the browser.
 
-
+<img width="1920" height="1011" alt="Screenshot from 2026-09-23 14-38-24" src="https://github.com/user-attachments/assets/8bd46d82-a44a-4f3e-9c5c-5975ebd7f495" />
 
 
 ---
